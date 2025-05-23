@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 header {
-  background-color: #f5c6e5;
+  background-color: #98778d;
   padding: 1em;
   text-align: center;
 }
@@ -44,14 +44,62 @@ form {
   max-width: 400px;
   margin: auto;
 }
-input, textarea, button {
-  padding: 0.5em;
-  font-size: 1em;
-}
+
+
 
 .img-catalogo{
   height: 15rem;
 }
+
+.contact-section {
+  background: url('tu-imagen.jpg') center/cover no-repeat;
+  padding: 40px;
+}
+
+.container-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(220, 217, 217, 0.9); /* azul agua con opacidad */
+  padding: 30px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info {
+  flex: 1;
+  color: rgb(0, 0, 0);
+  padding-right: 30px;
+}
+
+.info h3 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.formulario {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.formulario button:hover {
+  background-color: #000;
+}
+
+.formulario button{
+  width: 12rem;
+}
+
 
 @media (max-width: 600px) {
   .nav-links {

@@ -8,20 +8,7 @@ header {
   padding: 1em;
   text-align: center;
 }
-.nav-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-.nav-links li {
-  margin: 0 1em;
-}
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
+
 main {
   padding: 2em;
 }
@@ -31,6 +18,7 @@ main {
   gap: 1em;
   margin-top: 2em;
 }
+
 .servicio, .producto {
   background: #f0f0f0;
   padding: 1em;
@@ -142,6 +130,11 @@ form {
   border-radius: 30%;
 }
 
+#menu-toggle .menu-icon{
+  display: none;
+}
+
+
 
 .tratamientos-text{
   width: 20rem;
@@ -154,8 +147,4 @@ form {
   list-style-type: disclosure-closed;
 }
 
-@media (max-width: 480px) {
-  .nav-links {
-    flex-direction: column;
-  }
-}
+

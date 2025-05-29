@@ -1,0 +1,16 @@
+@import "variables";
+
+@include mobile{
+    display: none;
+}
+
+// se llama la clase del .html y con @extend a la clase del scss y se puede cambiar variables si se requiere
+.clase-index{
+    @extend .button;
+    color: red;
+
+    //reutilizar codigo general
+    @include flex-row;
+}
+
+

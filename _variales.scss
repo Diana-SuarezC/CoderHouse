@@ -1,0 +1,27 @@
+// variables
+
+$primarycolor: red;
+
+//mixin
+
+//el @content representa que lo que se escriba ahi desde el archivo scss principal se va a ver reflejado 
+@mixin mobile{
+    @media (max-width: 425px){
+        @content;
+    }
+};
+
+// extend : se crea una clase con estilos que despues se llama con @extend
+
+.button{
+    background-color: aqua;
+    font-size: 30rem;
+    border-color: blueviolet;
+    width: 20rem;
+}
+
+@mixin flex-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

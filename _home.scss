@@ -1,0 +1,52 @@
+.text-inbox{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #b48a2f;
+    font-size:xx-large;
+    justify-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tratamientos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    .tratamientos-img{
+        height: 25rem;
+        width: auto;
+        border-radius: 30%;
+    }
+
+    div{
+        width: 20rem;
+        font-family: Roboto;
+        font-weight: 500;
+        color:#a56da2;
+    }
+
+    li{
+        list-style-type: disclosure-closed;
+    }
+} 
+
+
+
+.img-carousel{
+  height: ImagesC;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 60% 60%;
+  cursor: pointer;
+}

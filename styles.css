@@ -1,150 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background-color: #98778d;
-  padding: 1em;
-  text-align: center;
-}
-
-main {
-  padding: 2em;
-}
-.grid-servicios, .catalogo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1em;
-  margin-top: 2em;
-}
-
-.servicio, .producto {
-  background: #f0f0f0;
-  padding: 1em;
-  border-radius: 10px;
-  text-align: center;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  max-width: 400px;
-  margin: auto;
-}
-
-
-.img-catalogo{
-  height: 15rem;
-}
-
-.contact-section {
-  background: url('tu-imagen.jpg') center/cover no-repeat;
-  padding: 40px;
-}
-
-.container-form {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(220, 217, 217, 0.9); /* azul agua con opacidad */
-  padding: 30px;
-  border-radius: 8px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.info {
-  flex: 1;
-  color: rgb(0, 0, 0);
-  padding-right: 30px;
-}
-
-.info h3 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 16px;
-}
-
-.info p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.formulario {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 
 
-.formulario button:hover {
-  background-color: #000;
-}
-
-.formulario button{
-  width: 12rem;
-}
 
 
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-size: 60% 60%;
-  cursor: pointer;
-}
 
 
 
-.img-carousel{
-  height: 30rem;
-}
-
-.text-inbox{ 
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: #b48a2f;
-  font-size:xx-large;
-  justify-items: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.Tratamientos{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tratamientos-img{
-  height: 25rem;
-  width: auto;
-  border-radius: 30%;
-}
-
-#menu-toggle .menu-icon{
-  display: none;
-}
 
 
 
-.tratamientos-text{
-  width: 20rem;
-  font-family: Roboto;
-  font-weight: 500;
-  color:#a56da2;
-}
 
-.lista{
-  list-style-type: disclosure-closed;
-}
+
+
+
+
 
 

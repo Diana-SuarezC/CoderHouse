@@ -1,9 +1,11 @@
+
+
 .text-inbox{
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color: #b48a2f;
+    color: $secondaryColor;
     font-size:xx-large;
     justify-items: center;
     margin-top: 2%;
@@ -26,7 +28,7 @@
         width: 20rem;
         font-family: Roboto;
         font-weight: 500;
-        color:#a56da2;
+        color: $primaryColor;
     }
 
     li{
@@ -37,7 +39,7 @@
 
 
 .img-carousel{
-  height: ImagesC;
+  height: $imagesC;
 }
 
 

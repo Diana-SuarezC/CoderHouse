@@ -2,6 +2,10 @@
 $imagesHeigh: 15rem;
 $imagesC: 30rem;
 
+$primaryColor: #a56da2;
+$secondaryColor: #b48a2f;
+$thirdColor: #98778d;
+$fourthColor: #f0f0f0;
 
 
 body {
@@ -11,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #98778d;
+  background-color: $thirdColor;
   padding: 1em;
   text-align: center;
 }
@@ -22,35 +26,31 @@ main {
 
 
 .box-design{
-  background: #f0f0f0;
+  background: $fourthColor;
   padding: 1em;
   border-radius: 10px;
   text-align: center;
 }
 
-
+.cat-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
 
 // variables
 
-$primarycolor: red;
 
-//mixin
 
-//el @content representa que lo que se escriba ahi desde el archivo scss principal se va a ver reflejado 
+
 @mixin mobile{
     @media (max-width: 425px){
         @content;
     }
 };
 
-// extend : se crea una clase con estilos que despues se llama con @extend
 
-.button{
-    background-color: aqua;
-    font-size: 30rem;
-    border-color: blueviolet;
-    width: 20rem;
-}
 
 @mixin flex-row{
     display: flex;

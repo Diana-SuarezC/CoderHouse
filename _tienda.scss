@@ -1,0 +1,17 @@
+
+.catalogo{
+    .grid-servicios{
+        @extend .cat-grid;
+    }
+    .catalogo-grid{
+        @extend .cat-grid;
+
+        .producto{
+            @extend .box-design;
+
+            .img-catalogo{
+                height: $imagesHeigh;
+            }
+        }
+    }
+}

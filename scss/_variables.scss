@@ -6,7 +6,7 @@ $primaryColor: #a56da2;
 $secondaryColor: #b48a2f;
 $thirdColor: #98778d;
 $fourthColor: #f0f0f0;
-
+$primaryColorbright: #d81b60;
 
 body {
   font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: $thirdColor;
+  background-color: $primaryColor;
   padding: 1em;
   text-align: center;
 }

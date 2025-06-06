@@ -204,14 +204,43 @@ main {
   background-color: #000;
 }
 
+.catalogo h2, .catalogo h3 {
+  color: #d81b60;
+}
+.catalogo h3 {
+  margin-top: 2rem;
+}
+.catalogo .catalogo-grid .producto .compras {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background-color: #a56da2;
+  bottom: 5px;
+  left: 80%;
+  transition: background-color 0.3s;
+  border-radius: 20%;
+}
+.catalogo .catalogo-grid .producto .compras:hover {
+  background-color: #d81b60;
+  cursor: pointer;
+}
+.catalogo .catalogo-grid .producto .carrito {
+  bottom: 5px;
+  left: 50%;
+  z-index: 1000;
+  font-size: 3rem;
+  color: white;
+}
 .catalogo .catalogo-grid .producto .img-catalogo {
   height: 15rem;
   border-radius: 20px;
+  transition: all 0.3s ease;
 }
 .catalogo .catalogo-grid .producto .img-catalogo:hover {
   animation: bigger;
   animation-fill-mode: forwards;
   cursor: pointer;
+  box-shadow: 0 0 25px rgba(19, 4, 4, 0.386);
 }
 @keyframes bigger {
   0% {

@@ -1,5 +1,13 @@
 
 .catalogo{
+
+    h2, h3{
+        color: $primaryColorbright;
+    }
+
+    h3{
+        margin-top: 2rem;
+    }
     .grid-servicios{
         @extend .cat-grid;
     }
@@ -8,17 +16,44 @@
 
         .producto{
             @extend .box-design;
-            
 
+
+            .compras{
+                position: relative;
+                height: 80px;
+                width: 80px;
+                background-color: $primaryColor;
+                bottom: 5px;
+                left: 80%;
+                transition: background-color 0.3s; 
+                border-radius: 20%;
+            }
+
+            .compras:hover{
+                background-color: $primaryColorbright;
+                cursor: pointer;
+            }
+
+            .carrito{
+                bottom: 5px;
+                left: 50%;
+                z-index: 1000;
+                font-size: 3rem;
+                color: white;
+            }
+            
             .img-catalogo{
                 height: $imagesHeigh;
                 border-radius: 20px;
+                transition: all 0.3s ease;
+
            }
         
             .img-catalogo:hover{
                 animation: bigger;
                 animation-fill-mode: forwards;
                 cursor: pointer; 
+                box-shadow: 0 0 25px rgba(19, 4, 4, 0.386);
             }
 
             @keyframes bigger {

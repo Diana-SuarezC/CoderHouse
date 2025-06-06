@@ -1,3 +1,48 @@
+.chat{
+    position: fixed;
+    bottom: 2.5px;
+    right: 25px;
+    z-index: 1000;
+    font-size: 5rem;
+    color: white;
+    
+}
+
+.chat:hover{
+    animation: vibrate 0.5s;
+}
+
+@keyframes vibrate {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(8px);
+    }
+    50%{
+        transform: translateX(-8px);
+    }
+    75%{
+        transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(-8px);
+    }
+    
+}
+
+.circulo{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1000;
+    height: 7rem;
+    width: 7rem;
+    background-color: $primaryColor;
+    border-radius: 100%;
+}
+
+
 
 
 .text-inbox{
@@ -78,4 +123,42 @@
         height: 30vh;
         width: 30vw;
     }
+}
+
+
+
+@include mobile{
+    .chat{ 
+        font-size: 2rem; 
+        bottom: 6px;
+        right: 14px;
+    }
+
+    
+    .circulo{
+        bottom: 5px;
+        right: 5px;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    @keyframes vibrate {
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(4px);
+        }
+        50%{
+            transform: translateX(-4px);
+        }
+        75%{
+            transform: translateX(4px);
+        }
+        100%{
+            transform: translateX(-4px);
+        }
+        
+    }
+
 }

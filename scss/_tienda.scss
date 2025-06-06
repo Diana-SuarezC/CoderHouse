@@ -8,10 +8,30 @@
 
         .producto{
             @extend .box-design;
+            
 
             .img-catalogo{
                 height: $imagesHeigh;
+                border-radius: 20px;
+           }
+        
+            .img-catalogo:hover{
+                animation: bigger;
+                animation-fill-mode: forwards;
+                cursor: pointer; 
+            }
+
+            @keyframes bigger {
+                0%{
+                    scale:1;
+                }
+                100%{
+                    scale: 1.5;
+                }
+                
             }
         }
+
+        
     }
 }

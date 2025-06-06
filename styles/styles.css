@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -26,6 +27,47 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
   margin-top: 2em;
+}
+
+.chat {
+  position: fixed;
+  bottom: 2.5px;
+  right: 25px;
+  z-index: 1000;
+  font-size: 5rem;
+  color: white;
+}
+
+.chat:hover {
+  animation: vibrate 0.5s;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(-8px);
+  }
+}
+.circulo {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  height: 7rem;
+  width: 7rem;
+  background-color: #a56da2;
+  border-radius: 100%;
 }
 
 .text-inbox {
@@ -96,6 +138,36 @@ main {
   width: 30vw;
 }
 
+@media (max-width: 425px) {
+  .chat {
+    font-size: 2rem;
+    bottom: 6px;
+    right: 14px;
+  }
+  .circulo {
+    bottom: 5px;
+    right: 5px;
+    height: 3rem;
+    width: 3rem;
+  }
+  @keyframes vibrate {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(4px);
+    }
+    50% {
+      transform: translateX(-4px);
+    }
+    75% {
+      transform: translateX(4px);
+    }
+    100% {
+      transform: translateX(-4px);
+    }
+  }
+}
 .contacto .container-form {
   display: flex;
   justify-content: space-between;
@@ -134,6 +206,28 @@ main {
 
 .catalogo .catalogo-grid .producto .img-catalogo {
   height: 15rem;
+  border-radius: 20px;
+}
+.catalogo .catalogo-grid .producto .img-catalogo:hover {
+  animation: bigger;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+@keyframes bigger {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+
+.titulo {
+  color: #d81b60;
+}
+
+.servicios {
+  margin-top: 3rem;
 }
 
 .grid-servicios {
@@ -143,10 +237,42 @@ main {
   margin-top: 2em;
 }
 .grid-servicios .servicio {
-  background: #f0f0f0;
   padding: 1em;
   border-radius: 10px;
   text-align: center;
+  border: solid rgba(0, 0, 0, 0.126);
+  justify-items: center;
+}
+.grid-servicios .servicio a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a56da2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.grid-servicios .servicio a:hover {
+  background-color: #d81b60; /* Color de fondo al pasar el ratón */
+}
+.grid-servicios .servicio .img-servicio {
+  width: 25rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 5%;
+}
+.grid-servicios .servicio .img-servicio img {
+  width: 25rem;
+  height: 20rem;
+  border-radius: 5%;
+  transition: transform 0.3s ease;
+}
+.grid-servicios .servicio img:hover {
+  transform: scale(1.2);
+}
+.grid-servicios .servicio h5 {
+  margin-top: 1rem;
 }
 
 .footer {

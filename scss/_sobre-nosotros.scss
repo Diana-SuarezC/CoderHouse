@@ -59,7 +59,7 @@
         padding: 20px;
         border-radius: 12px;
         text-align: center;
-       justify-items: center;
+        justify-items: center;
 
         h3 {
             font-size: 1.2rem;
@@ -79,6 +79,7 @@
             font-weight: bold;
             border-bottom: 1px solid transparent;
             transition: border-color 0.3s;
+            
 
          
 
@@ -87,17 +88,26 @@
               width: 10vw;
               border-radius: 8%;
               overflow: hidden; 
+
+                img{
+                  height: 25vh;
+                  border-radius: 8%;
+                  transition: transform 0.3s ease;
+                }
+
+                img:hover{
+                  transform: scale(1.2);
+                }
+
+                
             }
 
-            img{
-              height: 25vh;
-              border-radius: 8%;
-              transition: transform 0.3s ease;
-            }
+        
 
-            img:hover{
-              transform: scale(1.2);
-            }
+           
+          
+
+          
 
             
           }

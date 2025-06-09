@@ -458,12 +458,12 @@ main {
   border-radius: 8%;
   overflow: hidden;
 }
-.procedimientos-faciales .overlay .procedimientos-grid .procedimiento a img {
+.procedimientos-faciales .overlay .procedimientos-grid .procedimiento a .img-nos img {
   height: 25vh;
   border-radius: 8%;
   transition: transform 0.3s ease;
 }
-.procedimientos-faciales .overlay .procedimientos-grid .procedimiento a img:hover {
+.procedimientos-faciales .overlay .procedimientos-grid .procedimiento a .img-nos img:hover {
   transform: scale(1.2);
 }
 .procedimientos-faciales h2 {

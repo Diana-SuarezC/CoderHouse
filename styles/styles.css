@@ -6,9 +6,13 @@ body {
 }
 
 header {
-  background-color: #a56da2;
-  padding: 1em;
+  background: #a56da2;
+  background: radial-gradient(circle, #a56da2 0%, #a92fb4 80%);
+  padding: 3rem 3rem 1rem 3rem;
   text-align: center;
+}
+header h5 {
+  color: #f0f0f0;
 }
 
 main {
@@ -66,7 +70,7 @@ main {
   z-index: 1000;
   height: 7rem;
   width: 7rem;
-  background-color: #a56da2;
+  background-color: #a92fb4;
   border-radius: 100%;
 }
 
@@ -75,7 +79,7 @@ main {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  color: #b48a2f;
+  color: #a92fb4;
   font-size: xx-large;
   justify-items: center;
   margin-top: 2.5%;
@@ -117,27 +121,6 @@ main {
   cursor: pointer;
 }
 
-.map {
-  margin-top: 2.5rem;
-}
-.map h3 {
-  color: #d81b60;
-}
-.map h5 {
-  color: #d81b60;
-  font-family: Roboto;
-  margin-top: 2rem;
-}
-.map p {
-  font-family: Roboto;
-  margin: 0;
-}
-.map .ubicacion {
-  margin-top: 2rem;
-  height: 30vh;
-  width: 30vw;
-}
-
 @media (max-width: 425px) {
   .chat {
     font-size: 2rem;
@@ -167,6 +150,59 @@ main {
       transform: translateX(-4px);
     }
   }
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+.contacto h3 {
+  color: #d81b60;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contacto .map {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.contacto .map img {
+  height: 50vh;
+  margin-right: 2rem;
+}
+.contacto .map h5 {
+  color: #d81b60;
+  font-family: Roboto;
+}
+.contacto .map p {
+  font-family: Roboto;
+  margin: 0;
+}
+.contacto .map iframe {
+  margin-top: 2rem;
+  height: 20vh;
+  width: 20vw;
+}
+.contacto .map-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 8rem 0;
+}
+.contacto .map-2 img {
+  height: 50vh;
+  margin-left: 2rem;
+}
+.contacto .map-2 h5 {
+  color: #d81b60;
+  font-family: Roboto;
+}
+.contacto .map-2 p {
+  font-family: Roboto;
+  margin: 0;
+}
+.contacto .map-2 iframe {
+  margin-top: 2rem;
+  height: 20vh;
+  width: 20vw;
 }
 .contacto .container-form {
   display: flex;
@@ -201,9 +237,21 @@ main {
   width: 12rem;
 }
 .contacto .container-form .formulario button:hover {
-  background-color: #000;
+  background-color: #d81b60;
 }
 
+@media (max-width: 425px) {
+  .contacto .map, .contacto .map-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto .map img, .contacto .map-2 img {
+    margin-left: 0%;
+  }
+  .contacto .container-form {
+    flex-direction: column;
+  }
+}
 .catalogo h2, .catalogo h3 {
   color: #d81b60;
 }
@@ -305,7 +353,8 @@ main {
 }
 
 .footer {
-  background-color: #a56da2;
+  background: #a56da2;
+  background: radial-gradient(circle, #a56da2 20%, #a92fb4 100%);
   color: #f0f0f0;
   padding: 20px 0;
   margin-top: 10rem;

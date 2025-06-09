@@ -1,5 +1,6 @@
 .footer {
-  background-color: $primaryColor;
+  background: $primaryColor;
+  background: radial-gradient(circle, $primaryColor 20%, $secondaryColor 100%);
   color: $fourthColor;
   padding: 20px 0;
   margin-top: 10rem;

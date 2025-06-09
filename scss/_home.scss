@@ -38,7 +38,7 @@
     z-index: 1000;
     height: 7rem;
     width: 7rem;
-    background-color: $primaryColor;
+    background-color: $secondaryColor;
     border-radius: 100%;
 }
 
@@ -101,29 +101,8 @@
 }
 
 
-.map{
-    margin-top: 2.5rem;
 
-    h3{
-        color: $primaryColorbright;
-    }
 
-    h5{
-        color: $primaryColorbright;
-        font-family: Roboto;
-        margin-top: 2rem;
-    }
-    p{
-        font-family: Roboto;
-        margin:0;
-    }
-    
-    .ubicacion{
-        margin-top: 2rem;
-        height: 30vh;
-        width: 30vw;
-    }
-}
 
 
 

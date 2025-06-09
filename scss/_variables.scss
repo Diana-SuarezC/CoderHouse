@@ -3,11 +3,12 @@ $imagesHeigh: 15rem;
 $imagesC: 30rem;
 
 $primaryColor: #a56da2;
-$secondaryColor: #b48a2f;
+$secondaryColor: #a92fb4;
 $thirdColor: #98778d;
 $fourthColor: #f0f0f0;
 $primaryColorbright: #d81b60;
 $fifthcolor: #bc4dc6;
+$gradiantcolor: #d45fdf;;;
 
 
 body {
@@ -17,10 +18,16 @@ body {
 }
 
 header {
-  background-color: $primaryColor;
-  padding: 1em;
+  background: $primaryColor;
+  background: radial-gradient(circle, $primaryColor 0%, $secondaryColor 80%);
+  padding: 3rem 3rem 1rem 3rem;
   text-align: center;
+
+  h5{
+    color: $fourthColor;
+  }
 }
+
 
 main {
   padding: 2em;
